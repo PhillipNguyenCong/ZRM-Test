@@ -23,7 +23,7 @@ h6 {
 }
 
 /* Hero section */
-.elementor-element-adfee85 p {
+.elementor-element-adfee85 {
   margin: 0 0 12px 0 !important;
 }
 
@@ -31,14 +31,14 @@ h6 {
   font-size: 52px !important;
   line-height: 1.12 !important;
   font-weight: 700 !important;
-  max-width: 60vw !important;
+  max-width: 70vw !important;
 }
 
 .elementor-element-4b7d570 p {
   font-size: 18px !important;
   font-weight: 600 !important;
   line-height: 1.6 !important;
-  max-width: 60vw !important;
+  max-width: 70vw !important;
   margin-bottom: 12px !important;
 }
 
@@ -86,9 +86,6 @@ h6 {
     font-size: 16px !important;
     line-height: 1.65 !important;
     max-width: 90vw !important;
-  }
-  .elementor-element-adfee85 p {
-    margin-bottom: 16px !important;
   }
 }
 
