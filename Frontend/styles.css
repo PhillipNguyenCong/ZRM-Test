@@ -22,7 +22,7 @@ h6 {
   font-weight: 600 !important;
 }
 
-/* Add a gap below the line of text */
+/* Hero section */
 .elementor-element-adfee85 p {
   margin: 0 0 12px 0 !important;
 }
@@ -90,7 +90,6 @@ h6 {
   .elementor-element-adfee85 p {
     margin-bottom: 16px !important;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -112,3 +111,73 @@ h6 {
     justify-content: center !important;
   }
 }
+
+/* Services Help Section */
+.services-help {
+  padding: 80px 0;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Card */
+.service-item,
+.elementor-element-f4f9b17,
+.elementor-element-a796ec2,
+.elementor-element-2b1ec01 {
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  color: #0e2a3a; /* mørk blå/sort – bedre end ren sort */
+  text-align: left;
+  position: relative;
+
+  /* subtil farve-accent */
+  border-top: 2px solid #ff7a00;
+}
+
+/* Titel */
+.service-item h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0e2a3a;
+}
+
+/* Brødtekst */
+.service-item p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #3a4a55;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  .services-help {
+    padding: 56px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-item {
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Card Specific margin fixes */
+.elementor-element-6af4b31,
+.elementor-element-ca6831f,
+.elementor-element-08de866 {
+  margin-top: 12px !important;
+}
+
