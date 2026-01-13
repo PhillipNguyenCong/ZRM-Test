@@ -23,22 +23,27 @@ h6 {
 }
 
 /* Hero section */
-.elementor-element-adfee85 {
+.elementor-element-adfee85,
+.elementor-widget-text-editor {
   margin: 0 0 12px 0 !important;
+}
+.elementor-element-6377e30 {
+  padding: 0 !important;
 }
 
 .elementor-element-6377e30 h1 {
   font-size: 52px !important;
   line-height: 1.12 !important;
   font-weight: 700 !important;
-  max-width: 70vw !important;
+  max-width: 60vw !important;
+  margin-bottom: 24px !important;
 }
 
 .elementor-element-4b7d570 p {
   font-size: 18px !important;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   line-height: 1.6 !important;
-  max-width: 70vw !important;
+  max-width: 60vw !important;
   margin-bottom: 12px !important;
 }
 
@@ -61,7 +66,7 @@ h6 {
 }
 
 .elementor-element-76dd36p:active {
-  transform: translateY(0);
+  transform: translateY(0) !important;
 }
 
 /* Responsive tweaks */
@@ -81,6 +86,7 @@ h6 {
     font-size: 34px !important;
     line-height: 1.2 !important;
     max-width: 90vw !important;
+    margin-bottom: 20px !important;
   }
   .elementor-element-4b7d570 p {
     font-size: 16px !important;
@@ -94,9 +100,10 @@ h6 {
     font-size: 28px !important;
     line-height: 1.25 !important;
     max-width: 90vw !important;
+    margin-bottom: 14px !important;
   }
   .elementor-element-4b7d570 p {
-    font-size: 15px !important;
+    font-size: 16px !important;
     max-width: 90vw !important;
   }
 
@@ -111,63 +118,69 @@ h6 {
 
 /* Services Help Section */
 .services-help {
-  padding: 80px 0;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 5%;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 /* Grid */
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 32px !important;
 }
 
 /* Card */
-.service-item,
-.elementor-element-f4f9b17,
-.elementor-element-a796ec2,
-.elementor-element-2b1ec01 {
-  padding: 32px;
-  background: #ffffff;
-  border-radius: 12px;
-  color: #0e2a3a; /* mørk blå/sort – bedre end ren sort */
-  text-align: left;
-  position: relative;
+.service-item {
+  padding: 32px !important;
+  background: #0D1A27 !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  text-align: left !important;
+  position: relative !important;
+}
 
-  /* subtil farve-accent */
-  border-top: 2px solid #ff7a00;
+.service-item .service-icon {
+  width: 200px;
+  object-fit: contain;
+  margin: 0 auto 0 auto;
+  display: block;
+  clip-path: inset(5px);
 }
 
 /* Titel */
 .service-item h3 {
-  margin: 0 0 12px 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #0e2a3a;
+  margin: 0 0 12px 0 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
 }
 
 /* Brødtekst */
 .service-item p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: 400;
-  color: #3a4a55;
+  margin: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
 }
 
 /* Mobile tweaks */
 @media (max-width: 640px) {
   .services-help {
-    padding: 56px 0;
+    padding: 56px 24px !important;
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
   }
 
   .service-item {
-    padding: 24px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 24px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
   }
 }
 
@@ -178,3 +191,11 @@ h6 {
   margin-top: 12px !important;
 }
 
+.elementor-element-e12991e p,
+.elementor-element-0e69fa1 p,
+.elementor-element-f352c1c p,
+.timeline-item__card-desc,
+.elementor-element-3c555c8 p,
+.elementor-element-57c8da8 p {
+  font-weight: 500 !important;
+}
