@@ -1,0 +1,96 @@
+/* Set a global default font that overrides other declarations */
+html, body {
+    font-family: "HelveticaNeueBold", sans-serif;
+    font-weight: 600 !important;
+}
+
+/* Force all descendant text to use the heavy weight and font, even against inline styles */
+body *, body *::before, body *::after {
+    font-family: "HelveticaNeueBold", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+}
+
+/* Add a gap below the line of text */
+.elementor-element-adfee85 p {
+    margin: 0 0 12px 0 !important;
+}
+
+.elementor-element-6377e30 h1 {
+  font-size: 52px !important;
+  line-height: 1.12 !important;
+  font-weight: 700 !important;
+  max-width: 60vw !important;
+}
+
+.elementor-element-4b7d570 p {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+  max-width: 60vw !important;
+  margin-bottom: 12px !important;
+}
+
+/* Match the buttons to the rest of the page */
+.elementor-element-76dd36p {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-family: "HelveticaNeueBold", sans-serif !important;
+  font-weight: 500 !important;
+  border-radius: 10px !important;
+  padding: 15px 35px !important;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  width: fit-content !important;
+  font-size: 18px !important;
+  margin-top: 32px !important;
+}
+
+.elementor-element-76dd36p:hover {
+  background: #FF7800 !important;
+}
+
+.elementor-element-76dd36p:active {
+  transform: translateY(0);
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .elementor-element-6377e30 h1 {
+    font-size: 42px !important;
+    max-width: 80vw !important;
+  }
+  .elementor-element-4b7d570 p {
+    font-size: 17px !important;
+    max-width: 80vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .elementor-element-6377e30 h1 {
+    font-size: 34px !important;
+    line-height: 1.2 !important;
+    max-width: 90vw !important;
+  }
+  .elementor-element-4b7d570 p {
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+    max-width: 90vw !important;
+  }
+  .elementor-element-adfee85 p {
+    margin-bottom: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .elementor-element-6377e30 h1 {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+  }
+  .elementor-element-4b7d570 p {
+    font-size: 15px !important;
+  }
+}
