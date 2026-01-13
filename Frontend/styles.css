@@ -128,9 +128,8 @@ h6 {
 .services-help {
   background: #ffffff;
   border-radius: 10px;
-  padding: 5%;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  padding: 64px 48px;
+  margin: 64px 0;
 }
 
 /* Grid */
@@ -183,6 +182,11 @@ h6 {
 
 /* Mobile tweaks */
 @media (max-width: 640px) {
+  .services-help {
+    padding: 48px 24px;
+    margin: 48px 0;
+  }
+
   .services-grid {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
