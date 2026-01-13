@@ -48,7 +48,8 @@ h6 {
 }
 
 /* Match the buttons to the rest of the page */
-.elementor-element-76dd36p {
+.elementor-element-76dd36p,
+.Readmore {
   background-color: #ffffff !important;
   color: #000000 !important;
   font-family: "HelveticaNeueBold", sans-serif !important;
@@ -61,11 +62,18 @@ h6 {
   margin-top: 32px !important;
 }
 
-.elementor-element-76dd36p:hover {
+.Readmore {
+  margin-top: auto !important;
+  font-size: 16px !important;
+}
+
+.elementor-element-76dd36p:hover,
+.Readmore:hover {
   background: #ff7800 !important;
 }
 
-.elementor-element-76dd36p:active {
+.elementor-element-76dd36p:active,
+.Readmore:active {
   transform: translateY(0) !important;
 }
 
@@ -138,16 +146,20 @@ h6 {
   background: #0D1A27 !important;
   border-radius: 12px !important;
   color: #ffffff !important;
-  text-align: left !important;
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative !important;
 }
 
 .service-item .service-icon {
-  width: 200px;
-  object-fit: contain;
-  margin: 0 auto 0 auto;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto 16px auto;
   display: block;
-  clip-path: inset(5px);
 }
 
 /* Titel */
@@ -161,18 +173,16 @@ h6 {
 /* Brødtekst */
 .service-item p {
   margin: 0 !important;
+  margin-bottom: 16px !important;
   font-size: 15px !important;
   line-height: 1.6 !important;
   font-weight: 400 !important;
   color: #ffffff !important;
+  text-align: center !important;
 }
 
 /* Mobile tweaks */
 @media (max-width: 640px) {
-  .services-help {
-    padding: 56px 24px !important;
-  }
-
   .services-grid {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
